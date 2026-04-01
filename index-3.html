@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boston Brothers – Violin Duo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Cormorant+SC:wght@300;400;600&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- GRAIN OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  NAVIGATION                         -->
+  <!-- ═══════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-name">Boston Brothers</span>
+      <span class="logo-sub">Violin Duo</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#schedule">Shows</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="#home" class="mob-link">Home</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#gallery" class="mob-link">Gallery</a></li>
+      <li><a href="#media" class="mob-link">Media</a></li>
+      <li><a href="#schedule" class="mob-link">Shows</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  HERO                               -->
+  <!-- ═══════════════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-media">
+      <!--
+        ╔══════════════════════════════════════════════╗
+        ║  REPLACE THIS BLOCK WITH YOUR HERO IMAGE     ║
+        ║                                              ║
+        ║  Photo:  <img src="photos/hero.jpg"          ║
+        ║               alt="Boston Brothers"          ║
+        ║               class="hero-img" />            ║
+        ║                                              ║
+        ║  Video:  <video autoplay muted loop          ║
+        ║               playsinline class="hero-img">  ║
+        ║            <source src="videos/hero.mp4"     ║
+        ║                    type="video/mp4" />       ║
+        ║          </video>                            ║
+        ╚══════════════════════════════════════════════╝
+      -->
+      <div class="hero-placeholder img-placeholder">
+        <div class="ph-inner">
+          <div class="clef">𝄞</div>
+          <p>Hero Photo / Video<br/><small>photos/hero.jpg</small></p>
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">— Boston, Massachusetts —</p>
+      <h1 class="hero-title">
+        <em class="reveal d1">Boston</em>
+        <strong class="reveal d2">Brothers</strong>
+      </h1>
+      <p class="hero-sub reveal d3">A violin duo bridging classical &amp; contemporary</p>
+      <div class="hero-ctas reveal d4">
+        <a href="#schedule" class="btn-primary">Upcoming Shows</a>
+        <a href="#media" class="btn-ghost">Watch &amp; Listen</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  TICKER                             -->
+  <!-- ═══════════════════════════════════ -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker">
+      <span>Boston Brothers</span><span class="dot">✦</span>
+      <span>Violin Duo</span><span class="dot">✦</span>
+      <span>Live Performances</span><span class="dot">✦</span>
+      <span>Classical &amp; Contemporary</span><span class="dot">✦</span>
+      <span>Boston, MA</span><span class="dot">✦</span>
+      <span>Boston Brothers</span><span class="dot">✦</span>
+      <span>Violin Duo</span><span class="dot">✦</span>
+      <span>Live Performances</span><span class="dot">✦</span>
+      <span>Classical &amp; Contemporary</span><span class="dot">✦</span>
+      <span>Boston, MA</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  ABOUT                              -->
+  <!-- ═══════════════════════════════════ -->
+  <section id="about" class="about">
+    <div class="about-inner">
+
+      <div class="about-images">
+        <!--
+          REPLACE with your real photos:
+          <img src="photos/about-main.jpg"   alt="The Brothers" class="about-img-main" />
+          <img src="photos/about-accent.jpg" alt="Performance"  class="about-img-accent" />
+        -->
+        <div class="about-img-main  img-placeholder"><span>Main portrait<br/><small>photos/about-main.jpg</small></span></div>
+        <div class="about-img-accent img-placeholder"><span>Photo 2<br/><small>photos/about-accent.jpg</small></span></div>
+        <div class="about-badge">Est. Boston, MA</div>
+      </div>
+
+      <div class="about-text">
+        <p class="section-label">About Us</p>
+        <h2 class="section-title">Two brothers.<br/><em>One language.</em></h2>
+
+        <!--
+          REPLACE with your real bio below:
+        -->
+        <p class="about-body">
+          Boston Brothers are [Name] and [Name] — siblings who grew up sharing a
+          music stand and a passion for pushing what two violins can do together.
+          Rooted in classical training and drawn to the energy of contemporary
+          performance, they blend technique with emotion in a way that feels both
+          timeless and alive.
+        </p>
+        <p class="about-body">
+          From intimate concert halls to festival stages, their performances are known
+          for their intensity, chemistry, and surprising range. Born and raised in Boston,
+          the city's creative spirit runs through everything they play.
+        </p>
+
+        <div class="about-stats">
+          <!-- REPLACE [ # ] with your real numbers -->
+          <div class="stat"><span class="stat-n">[ # ]</span><span class="stat-l">Years Together</span></div>
+          <div class="stat"><span class="stat-n">[ # ]</span><span class="stat-l">Shows Played</span></div>
+          <div class="stat"><span class="stat-n">[ # ]</span><span class="stat-l">Cities Toured</span></div>
+        </div>
+
+        <div class="about-socials">
+          <!-- REPLACE href values with your real social URLs -->
+          <a href="https://instagram.com/YOURUSERNAME" target="_blank" class="soc-link">Instagram</a>
+          <a href="https://youtube.com/YOURCHANNEL" target="_blank" class="soc-link">YouTube</a>
+          <a href="https://open.spotify.com/artist/YOURID" target="_blank" class="soc-link">Spotify</a>
+          <a href="https://tiktok.com/@YOURUSERNAME" target="_blank" class="soc-link">TikTok</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  GALLERY                            -->
+  <!-- ═══════════════════════════════════ -->
+  <section id="gallery" class="gallery">
+    <div class="section-header">
+      <p class="section-label">Photography</p>
+      <h2 class="section-title">Gallery</h2>
+    </div>
+
+    <div class="gallery-grid">
+      <!--
+        REPLACE each .img-placeholder div with an <img> tag.
+        Keep the .gallery-item div and its modifier class (.tall / .wide).
+
+        Example:
+          <div class="gallery-item tall">
+            <img src="photos/gallery-1.jpg" alt="On stage" />
+          </div>
+
+        Sizing classes:
+          (none)  → standard square cell
+          .tall   → double-height cell
+          .wide   → double-width cell
+      -->
+      <div class="gallery-item tall">
+        <div class="img-placeholder"><span>Photo 1<br/><small>photos/gallery-1.jpg</small></span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="img-placeholder"><span>Photo 2<br/><small>photos/gallery-2.jpg</small></span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="img-placeholder"><span>Photo 3<br/><small>photos/gallery-3.jpg</small></span></div>
+      </div>
+      <div class="gallery-item tall">
+        <div class="img-placeholder"><span>Photo 4<br/><small>photos/gallery-4.jpg</small></span></div>
+      </div>
+      <div class="gallery-item wide">
+        <div class="img-placeholder"><span>Photo 5 (wide)<br/><small>photos/gallery-5.jpg</small></span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="img-placeholder"><span>Photo 6<br/><small>photos/gallery-6.jpg</small></span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="img-placeholder"><span>Photo 7<br/><small>photos/gallery-7.jpg</small></span></div>
+      </div>
+      <div class="gallery-item tall">
+        <div class="img-placeholder"><span>Photo 8<br/><small>photos/gallery-8.jpg</small></span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="img-placeholder"><span>Photo 9<br/><small>photos/gallery-9.jpg</small></span></div>
+      </div>
+    </div>
+
+    <!-- Lightbox overlay -->
+    <div class="lightbox" id="lightbox">
+      <button class="lb-close" id="lbClose">✕</button>
+      <button class="lb-prev" id="lbPrev">&#8592;</button>
+      <button class="lb-next" id="lbNext">&#8594;</button>
+      <div class="lb-img-wrap"><img id="lbImg" src="" alt="" /></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  MEDIA                              -->
+  <!-- ═══════════════════════════════════ -->
+  <section id="media" class="media">
+    <div class="section-header">
+      <p class="section-label">Videos &amp; Reels</p>
+      <h2 class="section-title">Watch</h2>
+    </div>
+
+    <div class="media-grid">
+
+      <!-- ─── INSTAGRAM REEL 1 ─────────────────────
+        OPTION A — embed code (paste from Instagram → ··· → Embed):
+          Remove the .img-placeholder div and paste your <blockquote> embed here.
+
+        OPTION B — clickable thumbnail:
+          <a href="https://www.instagram.com/reel/YOUR_REEL_ID/" target="_blank" class="reel-thumb-link">
+            <img src="photos/reel-thumb-1.jpg" alt="Reel 1" />
+            <div class="play-btn">▶</div>
+          </a>
+      ──────────────────────────────────────────── -->
+      <div class="media-card">
+        <div class="media-thumb">
+          <div class="img-placeholder reel-ph">
+            <div class="play-btn">▶</div>
+            <span>Instagram Reel 1<br/><small>Paste embed or thumbnail link</small></span>
+          </div>
+        </div>
+        <div class="media-info">
+          <p class="media-label">Instagram Reel</p>
+          <p class="media-title">[ Reel Title ]</p>
+          <a href="https://www.instagram.com/reel/REEL_ID_1/" target="_blank" class="media-link">Watch on Instagram →</a>
+        </div>
+      </div>
+
+      <!-- ─── INSTAGRAM REEL 2 ────────────────────── -->
+      <div class="media-card">
+        <div class="media-thumb">
+          <div class="img-placeholder reel-ph">
+            <div class="play-btn">▶</div>
+            <span>Instagram Reel 2<br/><small>Paste embed or thumbnail link</small></span>
+          </div>
+        </div>
+        <div class="media-info">
+          <p class="media-label">Instagram Reel</p>
+          <p class="media-title">[ Reel Title ]</p>
+          <a href="https://www.instagram.com/reel/REEL_ID_2/" target="_blank" class="media-link">Watch on Instagram →</a>
+        </div>
+      </div>
+
+      <!-- ─── YOUTUBE VIDEO 1 ──────────────────────
+        REPLACE YOUTUBE_VIDEO_ID_1 with your video's ID.
+        The ID is the part after ?v= in the YouTube URL.
+        e.g. youtube.com/watch?v=dQw4w9WgXcQ → ID is dQw4w9WgXcQ
+      ──────────────────────────────────────────── -->
+      <div class="media-card">
+        <div class="media-thumb video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_1"
+            title="Boston Brothers – Video 1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="media-info">
+          <p class="media-label">YouTube</p>
+          <p class="media-title">[ Video Title ]</p>
+          <a href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_1" target="_blank" class="media-link">Watch on YouTube →</a>
+        </div>
+      </div>
+
+      <!-- ─── YOUTUBE VIDEO 2 ────────────────────── -->
+      <div class="media-card">
+        <div class="media-thumb video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_2"
+            title="Boston Brothers – Video 2"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="media-info">
+          <p class="media-label">YouTube</p>
+          <p class="media-title">[ Video Title ]</p>
+          <a href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_2" target="_blank" class="media-link">Watch on YouTube →</a>
+        </div>
+      </div>
+
+      <!-- ─── INSTAGRAM REEL 3 ────────────────────── -->
+      <div class="media-card">
+        <div class="media-thumb">
+          <div class="img-placeholder reel-ph">
+            <div class="play-btn">▶</div>
+            <span>Instagram Reel 3<br/><small>Paste embed or thumbnail link</small></span>
+          </div>
+        </div>
+        <div class="media-info">
+          <p class="media-label">Instagram Reel</p>
+          <p class="media-title">[ Reel Title ]</p>
+          <a href="https://www.instagram.com/reel/REEL_ID_3/" target="_blank" class="media-link">Watch on Instagram →</a>
+        </div>
+      </div>
+
+      <!-- ─── YOUTUBE VIDEO 3 ────────────────────── -->
+      <div class="media-card">
+        <div class="media-thumb video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID_3"
+            title="Boston Brothers – Video 3"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="media-info">
+          <p class="media-label">YouTube</p>
+          <p class="media-title">[ Video Title ]</p>
+          <a href="https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_3" target="_blank" class="media-link">Watch on YouTube →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  PHOTO BREAK                        -->
+  <!-- ═══════════════════════════════════ -->
+  <div class="photo-break">
+    <!--
+      REPLACE with a dramatic full-width photo:
+      <img src="photos/break.jpg" alt="Boston Brothers" class="break-img" />
+    -->
+    <div class="img-placeholder break-ph"><span>Full-width dramatic band photo<br/><small>photos/break.jpg</small></span></div>
+    <div class="break-overlay">
+      <blockquote>"Two violins. &nbsp;One voice."</blockquote>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  SCHEDULE                           -->
+  <!-- ═══════════════════════════════════ -->
+  <section id="schedule" class="schedule">
+    <div class="schedule-inner">
+
+      <div class="schedule-left">
+        <p class="section-label">On Tour</p>
+        <h2 class="section-title">Upcoming<br/><em>Shows</em></h2>
+        <p class="sched-note">
+          Can't make it? Follow us on Instagram for live clips and announcements.
+        </p>
+        <!-- REPLACE href with your Instagram URL -->
+        <a href="https://instagram.com/YOURUSERNAME" target="_blank" class="btn-primary">Follow for Updates</a>
+      </div>
+
+      <div class="schedule-right">
+        <!--
+          REPLACE placeholder text with your real show details.
+          Duplicate a .show-row for each additional show.
+          Replace # in href with your ticketing URL (e.g. Eventbrite, Tixr, etc.)
+        -->
+
+        <div class="show-row">
+          <div class="show-date">
+            <span class="show-mon">MON</span>
+            <span class="show-day">00</span>
+          </div>
+          <div class="show-info">
+            <p class="show-venue">[ Venue Name ]</p>
+            <p class="show-loc">[ City, State ]</p>
+            <p class="show-time">[ 7:30 PM ]</p>
+          </div>
+          <a href="#" class="show-ticket">Tickets →</a>
+        </div>
+
+        <div class="show-row">
+          <div class="show-date">
+            <span class="show-mon">MON</span>
+            <span class="show-day">00</span>
+          </div>
+          <div class="show-info">
+            <p class="show-venue">[ Venue Name ]</p>
+            <p class="show-loc">[ City, State ]</p>
+            <p class="show-time">[ 8:00 PM ]</p>
+          </div>
+          <a href="#" class="show-ticket">Tickets →</a>
+        </div>
+
+        <div class="show-row">
+          <div class="show-date">
+            <span class="show-mon">MON</span>
+            <span class="show-day">00</span>
+          </div>
+          <div class="show-info">
+            <p class="show-venue">[ Venue Name ]</p>
+            <p class="show-loc">[ City, State ]</p>
+            <p class="show-time">[ 7:00 PM ]</p>
+          </div>
+          <a href="#" class="show-ticket">Tickets →</a>
+        </div>
+
+        <div class="show-row">
+          <div class="show-date">
+            <span class="show-mon">MON</span>
+            <span class="show-day">00</span>
+          </div>
+          <div class="show-info">
+            <p class="show-venue">[ Venue Name ]</p>
+            <p class="show-loc">[ City, State ]</p>
+            <p class="show-time">[ 8:00 PM ]</p>
+          </div>
+          <a href="#" class="show-ticket">Tickets →</a>
+        </div>
+
+        <div class="show-row">
+          <div class="show-date">
+            <span class="show-mon">MON</span>
+            <span class="show-day">00</span>
+          </div>
+          <div class="show-info">
+            <p class="show-venue">[ Venue Name ]</p>
+            <p class="show-loc">[ City, State ]</p>
+            <p class="show-time">[ 7:30 PM ]</p>
+          </div>
+          <a href="#" class="show-ticket">Tickets →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  CONTACT / BOOKING                  -->
+  <!-- ═══════════════════════════════════ -->
+  <section id="contact" class="contact">
+    <div class="contact-inner">
+
+      <div class="contact-left">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">Book Us /<br/><em>Say Hello</em></h2>
+        <p class="contact-body">
+          Interested in booking Boston Brothers for your event, venue, or festival?
+          We'd love to hear from you. Reach out through the form or directly below.
+        </p>
+        <div class="contact-details">
+          <!-- REPLACE with your real email + social handle -->
+          <a href="mailto:booking@bostonbrothers.com" class="cd-link">
+            <span class="cd-label">Booking Email</span>
+            <span class="cd-val">booking@bostonbrothers.com</span>
+          </a>
+          <a href="https://instagram.com/YOURUSERNAME" target="_blank" class="cd-link">
+            <span class="cd-label">Instagram</span>
+            <span class="cd-val">@bostonbrothers</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">Your Name</label>
+            <input type="text" id="fname" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" name="email" placeholder="jane@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="fsubject">Subject</label>
+          <select id="fsubject" name="subject">
+            <option value="">— Select a topic —</option>
+            <option value="booking">Booking Inquiry</option>
+            <option value="press">Press / Media</option>
+            <option value="collab">Collaboration</option>
+            <option value="general">General Hello</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" name="message" rows="5" placeholder="Tell us about your event, vision, or idea…" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+        <p class="form-success" id="formSuccess">✓ Message sent! We'll be in touch soon.</p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--  FOOTER                             -->
+  <!-- ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-name">Boston Brothers</span>
+        <span class="logo-sub">Violin Duo · Boston, MA</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#media">Media</a>
+        <a href="#schedule">Shows</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <!-- REPLACE with real URLs -->
+        <a href="https://instagram.com/YOURUSERNAME" target="_blank">Instagram</a>
+        <a href="https://youtube.com/YOURCHANNEL" target="_blank">YouTube</a>
+        <a href="https://open.spotify.com/artist/YOURID" target="_blank">Spotify</a>
+        <a href="https://tiktok.com/@YOURUSERNAME" target="_blank">TikTok</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Boston Brothers. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
