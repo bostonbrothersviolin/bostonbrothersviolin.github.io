@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════
    BOSTON BROTHERS — Violin Duo
    Aesthetic: Refined editorial · cream + midnight navy · 
-              Cormorant Garamond display · Jost body
+              Cormorant Garamond display · Cormorant Garamond body
    ═══════════════════════════════════════════════════════ */
 
 /* ── TOKENS ─────────────────────────────────────────── */
@@ -18,7 +18,7 @@
 
   --serif:    'Cormorant Garamond', Georgia, serif;
   --sc:       'Cormorant SC', Georgia, serif;
-  --sans:     'Jost', system-ui, sans-serif;
+  --sans:     'Cormorant Garamond', Georgia, serif;  /* ← was Jost */
 
   --nav-h:    72px;
   --max-w:    1280px;
@@ -32,7 +32,7 @@ html { scroll-behavior: smooth; font-size: 16px; }
 body {
   background: var(--cream);
   color: var(--ink);
-  font-family: var(--sans);
+  font-family: var(--serif);
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -110,7 +110,7 @@ body:has(button:hover) .cursor {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   padding: 0.85rem 2.4rem;
-  background: var(--navy);
+  background: var(--hero-eyebrow);
   color: var(--cream);
   border: 1px solid var(--navy);
   transition: background 0.3s, color 0.3s, border-color 0.3s;
@@ -120,7 +120,7 @@ body:has(button:hover) .cursor {
 .btn-ghost {
   display: inline-block;
   font-family: var(--sc);
-  font-size: 0.78rem;
+  font-size: 1rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   padding: 0.85rem 2.4rem;
@@ -158,8 +158,8 @@ body:has(button:hover) .cursor {
   transition: color 0.4s;
 }
 .logo-sub {
-  font-family: var(--sans);
-  font-size: 0.62rem;
+  font-family: var(--sc);
+  font-size: 0.90rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--gold);
@@ -276,7 +276,7 @@ body:has(button:hover) .cursor {
 }
 .hero-eyebrow {
   font-family: var(--sc);
-  font-size: 0.75rem;
+  font-size: 1.5rem;
   letter-spacing: 0.4em;
   color: var(--gold-lt);
   margin-bottom: 1.5rem;
@@ -710,7 +710,7 @@ body:has(button:hover) .cursor {
   margin: 0.2rem 0 0.15rem;
 }
 .show-time {
-  font-family: var(--sans);
+  font-family: var(--serif);   /* ← was var(--sans) */
   font-size: 0.82rem;
   color: var(--warm-grey);
 }
@@ -800,8 +800,8 @@ body:has(button:hover) .cursor {
   border: 1px solid rgba(184,149,90,0.25);
   border-radius: 0;
   color: var(--cream);
-  font-family: var(--sans);
-  font-size: 0.95rem;
+  font-family: var(--serif);   /* ← was var(--sans) */
+  font-size: 1rem;
   font-weight: 300;
   padding: 0.85rem 1rem;
   transition: border-color 0.3s, background 0.3s;
@@ -871,7 +871,8 @@ body:has(button:hover) .cursor {
 
 .footer-copy {
   width: 100%;
-  font-family: var(--sans); font-size: 0.72rem;
+  font-family: var(--serif);   /* ← was var(--sans) */
+  font-size: 0.72rem;
   color: rgba(245,240,232,0.25);
   text-align: center;
   letter-spacing: 0.1em;
